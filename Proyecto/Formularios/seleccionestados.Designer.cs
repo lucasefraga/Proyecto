@@ -34,8 +34,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadosDisponibles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadosSeleccionados = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -98,7 +98,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2});
+            this.estadosSeleccionados});
             this.dataGridView1.Location = new System.Drawing.Point(490, 166);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -106,15 +106,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(270, 187);
             this.dataGridView1.TabIndex = 6;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.Frozen = true;
-            this.dataGridViewTextBoxColumn2.HeaderText = "ESTADOS DISPONIBLES";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn2.Width = 200;
             // 
             // estadosDisponibles
             // 
@@ -124,6 +115,15 @@
             this.estadosDisponibles.ReadOnly = true;
             this.estadosDisponibles.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.estadosDisponibles.Width = 200;
+            // 
+            // estadosSeleccionados
+            // 
+            this.estadosSeleccionados.Frozen = true;
+            this.estadosSeleccionados.HeaderText = "ESTADOS DISPONIBLES";
+            this.estadosSeleccionados.Name = "estadosSeleccionados";
+            this.estadosSeleccionados.ReadOnly = true;
+            this.estadosSeleccionados.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.estadosSeleccionados.Width = 200;
             // 
             // seleccionestados
             // 
@@ -151,7 +151,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadosDisponibles;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadosSeleccionados;
     }
 }

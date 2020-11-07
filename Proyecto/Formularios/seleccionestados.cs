@@ -22,29 +22,15 @@ namespace Proyecto.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow rowPrincipal in dataGridView2.SelectedRows)
-            {
+            //Obtenemos el DataTable del DGV1
+            DataTable datos = (DataTable)dataGridView1.DataSource;
 
-                // Creamos un array con los valores que vamos a insertar
-                // en el segundo control DataGridView.
-                //
-                object[] values = {
-                                          rowPrincipal.Cells["Estados"].Value};
+            //Creamos un nuevo DT con el filtro.
+            DataTable seleccionados = datos.Select("condicion = 'aceptado'").CopyToDataTable();
 
-                // Creamos un nuevo objeto DataGridViewRow.
-                //
-                DataGridViewRow row = new DataGridViewRow();
+            //Asignamos al DGV2 el resultado
+            dataGridView2.DataSource = seleccionados;
 
-                // Creamos las celdas y las rellenamos con los valores existentes
-                // en el array.
-                //
-                row.CreateCells(dataGridView1, values);
-
-                // Añadimos la nueva fila al segundo control DataGridView.
-                //
-                dataGridView2.Rows.Add(row);
-
-            }
         }
 
         private void button3_Click(object sender, EventArgs e)
