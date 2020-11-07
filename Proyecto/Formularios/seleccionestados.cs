@@ -22,7 +22,29 @@ namespace Proyecto.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach Row as 
+            foreach (DataGridViewRow rowPrincipal in dataGridView2.SelectedRows)
+            {
+
+                // Creamos un array con los valores que vamos a insertar
+                // en el segundo control DataGridView.
+                //
+                object[] values = {
+                                          rowPrincipal.Cells["Estados"].Value};
+
+                // Creamos un nuevo objeto DataGridViewRow.
+                //
+                DataGridViewRow row = new DataGridViewRow();
+
+                // Creamos las celdas y las rellenamos con los valores existentes
+                // en el array.
+                //
+                row.CreateCells(dataGridView1, values);
+
+                // Añadimos la nueva fila al segundo control DataGridView.
+                //
+                dataGridView2.Rows.Add(row);
+
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
