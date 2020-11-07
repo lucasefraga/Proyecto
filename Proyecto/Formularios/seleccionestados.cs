@@ -22,14 +22,11 @@ namespace Proyecto.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Obtenemos el DataTable del DGV1
-            DataTable datos = (DataTable)dataGridView1.DataSource;
+            foreach (DataGridViewRow row in dataGridView2.SelectedRows )
+            {
+                dataGridView1.Rows.Add(dataGridView2);
 
-            //Creamos un nuevo DT con el filtro.
-            DataTable seleccionados = datos.Select("condicion = 'aceptado'").CopyToDataTable();
-
-            //Asignamos al DGV2 el resultado
-            dataGridView2.DataSource = seleccionados;
+            }
 
         }
 
@@ -41,6 +38,11 @@ namespace Proyecto.Formularios
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
         }
     }
 }

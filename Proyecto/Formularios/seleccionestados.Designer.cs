@@ -36,6 +36,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.estadosDisponibles = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadosSeleccionados = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -125,6 +126,10 @@
             this.estadosSeleccionados.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.estadosSeleccionados.Width = 200;
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // seleccionestados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,5 +158,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadosDisponibles;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadosSeleccionados;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
