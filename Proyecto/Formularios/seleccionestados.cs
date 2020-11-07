@@ -15,13 +15,14 @@ namespace Proyecto.Formularios
         public seleccionestados()
         {
             InitializeComponent();
+            dataGridView2.Rows.Add("Estado 1");
+            dataGridView2.Rows.Add("Estado 2");
+            dataGridView2.Rows.Add("Estado 3");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView2.Rows.Add("Estado 1");
-            dataGridView2.Rows.Add("Estado 2");
-            dataGridView2.Rows.Add("Estado 3");
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
