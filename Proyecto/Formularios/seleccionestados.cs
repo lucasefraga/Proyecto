@@ -19,7 +19,9 @@ namespace Proyecto.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            dataGridView2.Rows.Add("Estado 1");
+            dataGridView2.Rows.Add("Estado 2");
+            dataGridView2.Rows.Add("Estado 3");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -29,9 +31,7 @@ namespace Proyecto.Formularios
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView2.Rows.Add("Estado 1");
-            dataGridView2.Rows.Add("Estado 2");
-            dataGridView2.Rows.Add("Estado 3");
+            
         }
     }
 }
