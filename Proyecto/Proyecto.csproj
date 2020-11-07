@@ -52,10 +52,19 @@
     <Compile Include="Formularios\seleccionestados.Designer.cs">
       <DependentUpon>seleccionestados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\seleccionPisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\seleccionPisos.Designer.cs">
+      <DependentUpon>seleccionPisos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\seleccionestados.resx">
       <DependentUpon>seleccionestados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\seleccionPisos.resx">
+      <DependentUpon>seleccionPisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
