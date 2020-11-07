@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto
+namespace Proyecto.Formularios
 {
-    public partial class Form1 : Form
+    public partial class seleccionestados : Form
     {
-        public Form1()
+        public seleccionestados()
         {
             InitializeComponent();
         }
