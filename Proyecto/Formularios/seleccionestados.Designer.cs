@@ -45,7 +45,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(389, 176);
+            this.button1.Location = new System.Drawing.Point(381, 194);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 37);
             this.button1.TabIndex = 2;
@@ -55,7 +55,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(389, 219);
+            this.button2.Location = new System.Drawing.Point(381, 237);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 37);
             this.button2.TabIndex = 3;
@@ -65,7 +65,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(389, 262);
+            this.button3.Location = new System.Drawing.Point(381, 280);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 37);
             this.button3.TabIndex = 4;
@@ -75,7 +75,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(389, 305);
+            this.button4.Location = new System.Drawing.Point(381, 323);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 37);
             this.button4.TabIndex = 5;
@@ -98,7 +98,7 @@
             this.dgvEstadosD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccion,
             this.Estado});
-            this.dgvEstadosD.Location = new System.Drawing.Point(71, 176);
+            this.dgvEstadosD.Location = new System.Drawing.Point(63, 194);
             this.dgvEstadosD.Name = "dgvEstadosD";
             this.dgvEstadosD.RowHeadersVisible = false;
             this.dgvEstadosD.Size = new System.Drawing.Size(254, 177);
@@ -106,11 +106,13 @@
             // 
             // Seleccion
             // 
+            this.Seleccion.FillWeight = 71.06599F;
             this.Seleccion.HeaderText = "Seleccion";
             this.Seleccion.Name = "Seleccion";
             // 
             // Estado
             // 
+            this.Estado.FillWeight = 128.934F;
             this.Estado.HeaderText = "Estado";
             this.Estado.Name = "Estado";
             // 
@@ -125,7 +127,7 @@
             this.dgvEstadosS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SeleccionSel,
             this.EstadoSel});
-            this.dgvEstadosS.Location = new System.Drawing.Point(514, 176);
+            this.dgvEstadosS.Location = new System.Drawing.Point(519, 194);
             this.dgvEstadosS.Name = "dgvEstadosS";
             this.dgvEstadosS.RowHeadersVisible = false;
             this.dgvEstadosS.Size = new System.Drawing.Size(254, 177);
@@ -133,11 +135,13 @@
             // 
             // SeleccionSel
             // 
+            this.SeleccionSel.FillWeight = 71.06599F;
             this.SeleccionSel.HeaderText = "Seleccion";
             this.SeleccionSel.Name = "SeleccionSel";
             // 
             // EstadoSel
             // 
+            this.EstadoSel.FillWeight = 128.934F;
             this.EstadoSel.HeaderText = "Estado";
             this.EstadoSel.Name = "EstadoSel";
             // 
