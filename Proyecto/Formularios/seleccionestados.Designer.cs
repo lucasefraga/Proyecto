@@ -34,9 +34,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dgvEstadosD = new System.Windows.Forms.DataGridView();
+            this.dgvEstadosS = new System.Windows.Forms.DataGridView();
             this.Seleccion = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvEstadosS = new System.Windows.Forms.DataGridView();
             this.SeleccionSel = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.EstadoSel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstadosD)).BeginInit();
@@ -104,18 +104,6 @@
             this.dgvEstadosD.Size = new System.Drawing.Size(254, 177);
             this.dgvEstadosD.TabIndex = 6;
             // 
-            // Seleccion
-            // 
-            this.Seleccion.FillWeight = 71.06599F;
-            this.Seleccion.HeaderText = "Seleccion";
-            this.Seleccion.Name = "Seleccion";
-            // 
-            // Estado
-            // 
-            this.Estado.FillWeight = 128.934F;
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            // 
             // dgvEstadosS
             // 
             this.dgvEstadosS.AllowUserToAddRows = false;
@@ -133,9 +121,21 @@
             this.dgvEstadosS.Size = new System.Drawing.Size(254, 177);
             this.dgvEstadosS.TabIndex = 7;
             // 
+            // Seleccion
+            // 
+            this.Seleccion.FillWeight = 40F;
+            this.Seleccion.HeaderText = "Seleccion";
+            this.Seleccion.Name = "Seleccion";
+            // 
+            // Estado
+            // 
+            this.Estado.FillWeight = 128.934F;
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            // 
             // SeleccionSel
             // 
-            this.SeleccionSel.FillWeight = 71.06599F;
+            this.SeleccionSel.FillWeight = 40F;
             this.SeleccionSel.HeaderText = "Seleccion";
             this.SeleccionSel.Name = "SeleccionSel";
             // 
